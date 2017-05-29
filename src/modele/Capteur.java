@@ -31,34 +31,6 @@ public class Capteur {
         this.etat_capteur = etat_capteur;
     }
 
-    public void ouvre() {
-        //TODO
-    }
-
-    public void ferme() {
-        //TODO
-    }
-
-    public void pause() {
-        //TODO
-    }
-
-    public void fermee() {
-        //TODO
-    }
-
-    public void ouverte() {
-        //TODO
-    }
-
-    public EnumEtatP bloque() {
-        //TODO
-    }
-
-    public void reprend(EnumEtatP etat) {
-        //TODO
-    }
-
     @Override
     public String toString() {
         return "Capteur{" +
