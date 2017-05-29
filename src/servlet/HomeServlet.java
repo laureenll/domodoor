@@ -9,15 +9,13 @@ import javax.servlet.http.HttpServletResponse;
 
 public class HomeServlet extends HttpServlet {
 
-    private static final String JSP_PATH = "/WEB-INF/vue/page/";
-
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doGet(request, response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        final RequestDispatcher dispatcher = request.getRequestDispatcher(JSP_PATH + "/index.jsp");
+        final RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/index.jsp");
 
         dispatcher.forward( request, response );
     }
