@@ -55,7 +55,7 @@ public class Capteur {
         //TODO
     }
 
-    public reprend (EnumEtatP etat) {
+    public void reprend(EnumEtatP etat) {
         //TODO
     }
 
