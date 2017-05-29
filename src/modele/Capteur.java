@@ -1,6 +1,7 @@
 package modele;
 
 import utils.EnumEtatCa;
+import utils.EnumEtatP;
 
 /**
  * Created by lloison on 29/05/2017.
@@ -28,6 +29,34 @@ public class Capteur {
 
     public void setEtat_capteur(EnumEtatCa etat_capteur) {
         this.etat_capteur = etat_capteur;
+    }
+
+    public void ouvre() {
+        //TODO
+    }
+
+    public void ferme() {
+        //TODO
+    }
+
+    public void pause() {
+        //TODO
+    }
+
+    public void fermee() {
+        //TODO
+    }
+
+    public void ouverte() {
+        //TODO
+    }
+
+    public EnumEtatP bloque() {
+        //TODO
+    }
+
+    public reprend (EnumEtatP etat) {
+        //TODO
     }
 
     @Override
