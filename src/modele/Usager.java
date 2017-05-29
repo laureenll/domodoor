@@ -43,21 +43,24 @@ public class Usager {
     }
 
     public Usager getUsager(String nom, String prenom) {
+        Usager usg = null;
         for (Usager usager : usagers) {
             if (usager.getNom() == nom && usager.getPrenom() == prenom) {
-                return usager;
-            } else {
-                return null;
+                usg =  usager;
             }
         }
+        return usg;
     }
 
     public Usager setUsager(String oldNom, String oldPrenom, String newNom, String newPrenom) {
-        Usager usager = getUsager(oldNom, oldPrenom);
-        usager.setPrenom(newPrenom);
-        usager.setNom(newNom);
-
-
+        Usager usager = null;
+        for (int i = 0; i < usagers.size(); i++) {
+            if(usagers.get(i).getNom() == oldNom && usagers.get(i).getPrenom() == oldPrenom) {
+                usager.setPrenom(newPrenom);
+                usager.setNom(newNom);
+                usagers.set(i, usager);
+            }
+        }
         return usager;
     }
 }
