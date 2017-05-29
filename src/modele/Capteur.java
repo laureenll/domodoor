@@ -53,6 +53,7 @@ public class Capteur {
 
     public EnumEtatP bloque() {
         //TODO
+        return null;
     }
 
     public void reprend(EnumEtatP etat) {
