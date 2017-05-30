@@ -3,10 +3,10 @@ package modele;
 import utils.EnumEtatP;
 
 public class PorteBuilder {
-    private Long no_porte;
+    private long no_porte;
     private EnumEtatP etat_porte;
 
-    public PorteBuilder setNo_porte(Long no_porte) {
+    public PorteBuilder setNo_porte(long no_porte) {
         this.no_porte = no_porte;
         return this;
     }
@@ -17,6 +17,7 @@ public class PorteBuilder {
     }
 
     public Porte createPorte() {
+
         return new Porte(no_porte, etat_porte);
     }
 }

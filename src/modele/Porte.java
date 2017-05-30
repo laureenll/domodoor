@@ -5,6 +5,7 @@ import utils.EnumEtatP;
 public class Porte {
     private Long no_porte;
     private EnumEtatP etat_porte;
+    private Moteur moteur;
 
     public Porte(Long no_porte, EnumEtatP etat_porte) {
         this.no_porte = no_porte;
@@ -28,7 +29,7 @@ public class Porte {
     }
 
     public void ouvre() {
-        //TODO
+        //moteur.
     }
 
     public void ferme() {

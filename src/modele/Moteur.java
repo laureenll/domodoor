@@ -2,9 +2,6 @@ package modele;
 
 import utils.EnumEtatM;
 
-/**
- * Created by lloison on 29/05/2017.
- */
 public class Moteur {
     private Long no_moteur;
     private EnumEtatM etat_moteur;
@@ -28,6 +25,10 @@ public class Moteur {
 
     public void setEtat_moteur(EnumEtatM etat_moteur) {
         this.etat_moteur = etat_moteur;
+    }
+
+    public void tirer() {
+
     }
 
     @Override
