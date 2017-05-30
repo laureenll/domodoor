@@ -4,10 +4,12 @@ import controleur.IPorteControleur;
 import modele.Capteur;
 import modele.Porte;
 import utils.EnumEtatCo;
+import utils.EnumEtatP;
 
 public class PorteControleur implements IPorteControleur{
     private Porte porte;
     private EnumEtatCo etat_controleur;
+    private EnumEtatCo etat_controleur_urgence;
 
     public PorteControleur(Porte porte) {
         this.etat_controleur = EnumEtatCo.PORTEFERMEE;
@@ -20,17 +22,18 @@ public class PorteControleur implements IPorteControleur{
 
     public void ouvre() {
         porte.ferme();
-        this.etat_controleur = EnumEtatCo.ENOUVERTURE;
+        etat_controleur = EnumEtatCo.ENOUVERTURE;
     }
 
     public void ferme() {
         porte.ferme();
-        this.etat_controleur = EnumEtatCo.ENFERMETURE;
+        etat_controleur = EnumEtatCo.ENFERMETURE;
     }
 
     public EnumEtatCo urgence() {
         porte.bloque();
-        this.etat_controleur = EnumEtatCo.URGENCE;
+        etat_controleur_urgence = etat_controleur;
+        etat_controleur = EnumEtatCo.URGENCE;
         return EnumEtatCo.URGENCE;
     }
 
@@ -40,6 +43,7 @@ public class PorteControleur implements IPorteControleur{
     }
 
     public void repriseCle() {
-
+        porte.reprend();
+        etat_controleur = etat_controleur_urgence;
     }
 }

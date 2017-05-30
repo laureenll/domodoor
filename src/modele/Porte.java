@@ -6,7 +6,6 @@ public class Porte {
     private long no_porte;
     private EnumEtatP etat_porte;
     private EnumEtatP etatPorteBloquee;
-    private Moteur moteur;
 
     /**
      * Constructeur de la classe Porte
