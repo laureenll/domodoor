@@ -6,6 +6,7 @@ public class Porte {
     private long no_porte;
     private EnumEtatP etat_porte;
     private EnumEtatP etatPorteBloquee;
+    private Moteur moteur;
 
     /**
      * Constructeur de la classe Porte
@@ -69,7 +70,7 @@ public class Porte {
      * Permet d'ouvrir la porte
      */
     public void ouvre() {
-        //moteur.tirer();
+        moteur.tirer();
         this.etat_porte = EnumEtatP.ENOUVERTURE;
     }
 
@@ -77,7 +78,7 @@ public class Porte {
      * Permet de fermer la porte
      */
     public void ferme() {
-        //moteur.pousser();
+        moteur.pousser();
         this.etat_porte = EnumEtatP.ENFERMETURE;
     }
 
@@ -85,7 +86,7 @@ public class Porte {
      * Arrête l'action de la porte
      */
     public void pause() {
-        //moteur.stop();
+        moteur.stop();
         this.etat_porte = EnumEtatP.ARRETEE;
     }
 
@@ -120,13 +121,13 @@ public class Porte {
      */
     public void reprend(EnumEtatP etat) {
         this.etat_porte = etat;
-        /*if (etat == EnumEtatP.ENFERMETURE) {
+        if (etat == EnumEtatP.ENFERMETURE) {
             moteur.pousser();
         } else if (etat == EnumEtatP.ENOUVERTURE) {
             moteur.tirer();
         } else {
             //Problème : avant que la porte se bloque, son état n'est pas bien enregistré
-        }*/
+        }
     }
 
     @Override
