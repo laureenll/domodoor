@@ -133,17 +133,16 @@ public class Porte {
 
     /**
      * Reprise de la porte après un arrêt
-     * @param etat
      */
-    public void reprend(EnumEtatP etat) {
-        this.etat_porte = etat;
-        if (etat == EnumEtatP.ENFERMETURE) {
+    public void reprend() {
+
+        /*if (etat == EnumEtatP.ENFERMETURE) {
             moteur.pousser();
         } else if (etat == EnumEtatP.ENOUVERTURE) {
             moteur.tirer();
         } else {
             //Problème : avant que la porte se bloque, son état n'est pas bien enregistré
-        }
+        }*/
     }
 
     @Override
