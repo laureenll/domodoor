@@ -7,7 +7,6 @@ public enum EnumEtatCo {
     ENMOUVEMENT,
     ENATTENTE,
     URGENCE,
-    FERMEE,
     PORTEOUVERTE,
     PORTEFERMEE,
     ENOUVERTURE,
