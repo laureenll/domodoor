@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DomoDoor.iml" filepath="$PROJECT_DIR$/DomoDoor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WSDomodoor/WSDomodoor.iml" filepath="$PROJECT_DIR$/WSDomodoor/WSDomodoor.iml" />
+    </modules>
+  </component>
+</project>

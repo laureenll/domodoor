@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" build-on-make="true" name="DomoDoor:Web2 exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/DomoDoor_Web2_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="DomoDoor/web/Web2" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="javaee-facet-classes" facet="DomoDoor/web/Web2" />
+          <element id="javaee-facet-classes" facet="DomoDoor/web/Web" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="DomoDoor/web/Web" />
+    </root>
+  </artifact>
+</component>
